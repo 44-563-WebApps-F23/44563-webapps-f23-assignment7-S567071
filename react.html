@@ -18,6 +18,7 @@
   <div id="counter">Count</div>
   <button type="button" class="btn btn-success" onclick="startTime()">Start Timer</button>
   <button type="button" class="btn btn-warning" onclick="recordTime()">React</button>
+  <button type="button" class="btn btn-alert" onclick="bonusTime()">Bonus</button>
 
 
   <script>
@@ -41,6 +42,19 @@
           document.getElementById('target').innerHTML = "Time was " + elapsedTime;
         }
       }, 8000)
+    }
+
+    function bonusTime() 
+    {
+      let bonus = Math.floor(Math.random() * 8)+2;
+      for(let i =0;i<bonus;i++)
+      {
+        setTimeout (function(bonus) {
+          return function() {
+            document.getElementById("counter").innerHTML = bonus;
+          };
+        }(i),(8-i) * 1000);
+      }
     }
   </script>
 

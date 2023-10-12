@@ -14,6 +14,8 @@
     <div class="text-success" id="penalty">Penalty is zero</div>
     <button type="button" class="btn btn-success" onclick="help()">Click for help</button>
     <p class="text-warning" id="help">Help report</p>
+    <button onclick="bonusGame()">BONUS GAME</button>
+    <br>
     <br>
     <div class="flex-container">
         <div class="row">
@@ -169,6 +171,29 @@
             }
             penalty = penalty+2;
             document.getElementById('penalty').innerHTML = "penalty is: "+penalty;
+        }
+
+        function bonusGame()
+        {
+            let treasureLocation = Math.floor(Math.random() * 24);
+            let trapLocation = Math.floor(Math.random() * 24);
+            document.getElementById('locations').innerHTML = "Number of locations checked is zero ";
+            document.getElementById('penalty').innerHTML = "Penalty is 0";
+            for(var i=1;i<=25;i++)
+            {
+                if(i==treasureLocation)
+                {
+                    document.getElementById('img'+i).src = "treasure-img.jpg";
+                }
+                else if(i==trapLocation)
+                {
+                    document.getElementById('img'+i).src = "trap.jpg";
+                }
+                else
+                {
+                    document.getElementById('img'+i).src = "pirate-hat.jpg";
+                }
+            }
         }
     </script>
 
