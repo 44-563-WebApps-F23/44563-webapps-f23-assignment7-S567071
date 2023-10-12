@@ -12,99 +12,165 @@
     <p class="font-monospace">Click on the locations to search for treasure, beware the traps</p>
     <div class="fw-semibold" id="locations"> Number of locations checked is zero</div>
     <div class="text-success" id="penalty">Penalty is zero</div>
-    <p>Click for help</p>
+    <p onclick="help()">Click for help</p>
     <p class="text-warning" id="help">Help report</p>
     <br>
     <div class="flex-container">
         <div class="row">
             <div class="col-md">
-                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;" id="img1" onclick="check(0)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;" id="img2" onclick="check(1)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;" id="img3" onclick="check(2)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;" id="img4" onclick="check(3)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;">
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md">
-                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;">
-            </div>
-            <div class="col-md">
-                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;">
-            </div>
-            <div class="col-md">
-                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;">
-            </div>
-            <div class="col-md">
-                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;">
-            </div>
-            <div class="col-md">
-                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;" id="img5" onclick="check(4)">
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md">
-                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;" id="img6" onclick="check(5)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;" id="img7" onclick="check(6)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;" id="img8" onclick="check(7)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;" id="img9" onclick="check(8)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;">
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md">
-                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;">
-            </div>
-            <div class="col-md">
-                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;">
-            </div>
-            <div class="col-md">
-                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;">
-            </div>
-            <div class="col-md">
-                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;">
-            </div>
-            <div class="col-md">
-                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;" id="img10" onclick="check(9)">
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md">
-                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;" id="img11" onclick="check(10)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;" id="img12" onclick="check(11)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;" id="img13" onclick="check(12)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;" id="img14" onclick="check(13)">
             </div>
             <div class="col-md">
-                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;">
+                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;" id="img15" onclick="check(14)">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md">
+                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;" id="img16" onclick="check(15)">
+            </div>
+            <div class="col-md">
+                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;" id="img17" onclick="check(16)">
+            </div>
+            <div class="col-md">
+                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;" id="img18" onclick="check(17)">
+            </div>
+            <div class="col-md">
+                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;" id="img19" onclick="check(18)">
+            </div>
+            <div class="col-md">
+                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;" id="img20" onclick="check(19)">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md">
+                <img src="treasure.jpg" alt="place" style="height: 100px;width: 100px;" id="img21" onclick="check(20)">
+            </div>
+            <div class="col-md">
+                <img src="treasure.jpg" alt="treasure" style="height: 100px;width: 100px;" id="img22" onclick="check(21)">
+            </div>
+            <div class="col-md">
+                <img src="treasure.jpg" alt="trap" style="height: 100px;width: 100px;" id="img23" onclick="check(22)">
+            </div>
+            <div class="col-md">
+                <img src="treasure.jpg" alt="pirate-hat" style="height: 100px;width: 100px;" id="img24" onclick="check(23)">
+            </div>
+            <div class="col-md">
+                <img src="treasure.jpg" alt="empty"  style="height: 100px;width: 100px;" id="img25" onclick="check(24)">
             </div>
         </div>
     </div>
+    <script>
+        var imgs = [];
+        for(var i =0;i<25;i++)
+        {
+            var clicks = "img" + (i+1);
+            imgs.push(clicks);
+        }
+        var checkCount = 0;
+        var penalty = 0;
+        var lastCheck = 0;
+        var treasureLocation = 5;
+        var trapLocation = 18;
+        var gameOver = false;
+        function check(x)
+        {
+            if(gameOver == true){
+                return ;
+            }
+            var ele = parseInt(x);
+            var aid = imgs[ele];
+            var arryid = document.getElementById(aid);
+            if(ele == treasureLocation)
+            {
+                arryid.src = "treasure-img.jpg";
+                gameOver = true;
+                penalty = penalty-3;
+            }
+            else if(ele == trapLocation)
+            {
+                arryid.src = "trap.jpg";
+                gameOver = true;
+                penalty = penalty+4;
+            }
+            else
+            {
+                arryid.src = "pirate-hat.jpg";
+            }
+            checkCount++;
+            penalty++;
+
+            document.getElementById('locations').innerHTML = "Number of locations checked: " + checkCount;
+            document.getElementById('penalty').innerHTML = "Penalty is: "+penalty;
+            lastCheck = ele;
+        }
+
+        function help()
+        {
+            var lst_row = lastCheck/5;
+            var lst_clmn = lastCheck%5;
+            if(lastCheck == 0 || lastCheck == 6 || lastCheck == 10)
+            {
+                document.getElementById('help').innerHTML = "Can smell it";
+            }
+            else if (lastCheck == 1 || lastCheck == 7 || lastCheck == 11 || lastCheck == 15)
+            {
+                document.getElementById('help').innerHTML = "Close Matie";
+            }
+            else
+            {
+                document.getElementById('help').innerHTML = "Step Faster";
+            }
+            penalty = penalty+2;
+            document.getElementById('penalty').innerHTML = "penalty is: "+penalty;
+        }
+    </script>
+
 </body>
 </html>
